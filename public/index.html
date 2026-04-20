@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ninja</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body class="text-gray-600 font-mono">
+    <div class="max-w-6xl mx-auto flexs">
+      <!-- Navbar -->
+      <nav
+        class="bg-white border-b border-gray-200 px-8 py-5 flex justify-between items-center class=text-4xl font-bold text-red-500"
+      >
+        <h1 class="hover :text-gray-700 font-bold  text-3xl font-bold tracking-wider text-orange-600">
+          Food Ninja
+        </h1>
+        <div class="flex gap-8 text-sm font-medium">
+          <a href="#" class="w-5 hover:text-orange-600">Home</a>
+          <a href="#" class="hover:text-orange-600">About</a>
+          <a href="#" class="hover:text-orange-600">Contact</a>
+        </div>
+        <div class="flex justify-start">
+          <a href="#" class="btn text-primary transition ease-out duration-500">Log in</a>
+          <a href="#" class="btn text-primary ml-2" transition ease-out duration-500>Sign up</a>
+        </div>
+      </nav>
+
+      <main class="px-8 py-12">
+        <header class="mb-12">
+          <h2 class="text-6xl font-bold text-gray-800">Recipes</h2>
+          <h3 class="text-3xl text-orange-600">For Ninjas</h3>
+        </header>
+
+        <!-- Latest Recipes -->
+        <section class="mb-16">
+          <h4 class="text-xl font-bold pb-4 border-b border-gray-300">
+            Latest Recipes
+          </h4>
+
+          <div class="grid grid-cols-3 gap-10 md:grid-cols-3 lg:grid-cols-1 lg:grid-row-3 gap-8 mt-10">
+            <div class="card">
+              <img
+                src="img/noddles.jpg"
+                alt="veg noddles"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h5 class="font-semibold text-xl"> veg noddles</h5>
+                <p class="text-gray-500 text-sm mt-1">
+                  Recipe by Mario • 45 mins
+                </p>
+                <div class="badge">
+                  <span>25 mins</span>
+                </div>
+              </div>
+              <div class="card">
+              <img
+                src="img/curry.jpg"
+                alt="curry"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h5 class="font-semibold text-xl">curry</h5>
+                <p class="text-gray-500 text-sm mt-1">
+                  Recipe by Mario • 45 mins
+                </p>
+                <div class="badge">
+                  <span>25 mins</span>
+                </div>
+              </div>
+              <div class="card">
+              <img
+                src="img/tufa-curry.jpg"
+                alt="Tufa curry"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h5 class="font-semibold text-xl">tufa curry</h5>
+                <p class="text-gray-500 text-sm mt-1">
+                  Recipe by Mario • 45 mins
+                </p>
+                <div class="badge">
+                  <span>25 mins</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add 2 more cards here later -->
+          </div>
+        </section>
+
+        <div class="justify-center text-center mt-10">
+          <button
+            class="px-10 py-4 bg-gray-700 text-white rounded-2xl hover:bg-black text-sm font-medium"
+          >
+            Load More Recipes
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
